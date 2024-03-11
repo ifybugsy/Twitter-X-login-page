@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#262a2f;
+}
+
+.login-part{
+    background: #fff;
+    padding: 30px 120px;
+    width: 550px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    text-transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px; 
+    justify-content: center;
+}
+
+.tlogo{
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.login-part h2{
+    margin-bottom: 20px;
+}
+
+.login-part button img{
+    width: 18px;
+    margin-right: 10px;
+
+    
+}
+
+.login-part button{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #999;
+    font-weight:500;
+    cursor: pointer;
+}
+
+.login-part  hr{
+    border: 0;
+    height: 1px;
+    background-color: #c2c2c2;
+    margin: 5px;
+
+}
+
+.login-part span {
+    display: block;
+    width: 40px;
+    margin: auto;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+
+
+.login-part input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: #333;
+}
+
+
+.login-part form button{
+    background-color: black;
+    color: #fff;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+
+.login-part p{
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin: 40px 0 50px;
+}
+
+.login-part p a {
+    text-decoration: none;
+    color: #359cf0;
+}
+
+
+/* Lets make it responsive */
+@media (max-width: 900px) {
+    .login-part{
+        flex-direction: column;
+        text-align: center;
+    }
+     .tlogo{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .login-part h2{
+        font-size: 3.5rem;
+    }
+    .login-part p{
+        font-size: 1.2rem;
+    }
+    form{
+        padding: 15px;
+    }
+}
+
